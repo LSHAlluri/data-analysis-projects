@@ -12,6 +12,7 @@ altitude_reached = 0
 while (fuel_level <= 5000 or fuel_level > 30000):
   fuel_level = int(input("Please enter the starting fuel level: "))
 
+
 # b. Use a second loop to query the user for the number of astronauts (up to a maximum of 7). Validate the entry.
   
 while (num_astronauts_aboard <= 1 or num_astronauts_aboard > 7):
@@ -24,6 +25,8 @@ while (fuel_level - (100*num_astronauts_aboard) >= 0):
   fuel_level -= 100 * num_astronauts_aboard
   altitude_reached += 50
 
+print("fuel level", fuel_level,"after last while loop")
+
 # Exercise #2: Print the result with the phrase, The shuttle gained an altitude of ___ km and has ___ kg of fuel left. Fill in the 
 # blanks with the altitude and fuel level values.
 
@@ -33,5 +36,5 @@ print("The shuttle gained an altitude of ",altitude_reached ,"km and has ", fuel
 
 if altitude_reached >= 2000:
   print("Orbit achieved!")
-else:
+else:  
   print("Failed to reach orbit.")
