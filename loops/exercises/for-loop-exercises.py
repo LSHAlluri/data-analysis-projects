@@ -15,5 +15,6 @@ for num in range(12,-15,-2):
 for num in range(50,19,-1):
     if num%3 == 0: #checks for multiples of 3
         print(num)
+     
 
 
