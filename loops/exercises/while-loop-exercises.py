@@ -25,8 +25,6 @@ while (fuel_level - (100*num_astronauts_aboard) >= 0):
   fuel_level -= 100 * num_astronauts_aboard
   altitude_reached += 50
 
-print("fuel level", fuel_level,"after last while loop")
-
 # Exercise #2: Print the result with the phrase, The shuttle gained an altitude of ___ km and has ___ kg of fuel left. Fill in the 
 # blanks with the altitude and fuel level values.
 
