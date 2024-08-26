@@ -21,7 +21,7 @@ while (num_astronauts_aboard <= 1 or num_astronauts_aboard > 7):
 # c. Use a final loop to monitor the fuel status and the altitude of the shuttle. Each iteration, decrease the fuel level by 100 units 
 # for each astronaut aboard. Also, increase the altitude by 50 kilometers.
 
-while (fuel_level - (100*num_astronauts_aboard) >= 0):
+while (fuel_level - (100 * num_astronauts_aboard) >= 0):
   fuel_level -= 100 * num_astronauts_aboard
   altitude_reached += 50
 
