@@ -23,16 +23,16 @@ print("Cargo hold contents are:\n{0}\n{1}\n{2}\n{3}".format(cargo_hold[0],cargo_
 # c) Query the user to select a cabinet (0 - 3) in the cargo_hold.he
 cabinetNum = int(input("0.Food\n1.Equipment\n2.Pets\n3.Sleepaids\nSelect a cabinet from the cargo hold: "))
 
-# d) Use bracket notation and format to display the contents of the selected cabinet. 
-# If the user entered an invalid number, print an error message.
+# # d) Use bracket notation and format to display the contents of the selected cabinet. 
+# # If the user entered an invalid number, print an error message.
 # if cabinetNum in (0,1,2,3):
 #     print(cargo_hold[cabinetNum])   
 # else:
 #     print("Invalid input!")
 
-# e) Modify the code to query the user for BOTH a cabinet in cargo_hold AND a particular item. 
-# Use the in method to check if the cabinet contains the selected item, then print 
-# “Cabinet ____ DOES/DOES NOT contain ____.”
+# # e) Modify the code to query the user for BOTH a cabinet in cargo_hold AND a particular item. 
+# # Use the in method to check if the cabinet contains the selected item, then print 
+# # “Cabinet ____ DOES/DOES NOT contain ____.”
 # cabinet = int(input("0.Food\n1.Equipment\n2.Pets\n3.Sleepaids\nSelect a cabinet from the cargo hold: "))
 zero = "Food"
 one = "Equipment"
@@ -42,9 +42,8 @@ three = "Sleepaids"
 if cabinetNum in (0,1,2,3):
     cabinetItem = input("Enter the item you want to check availability for: ")
     if cabinetItem in cargo_hold[cabinetNum]:
-        print("The cabinet contains {0}".format(cabinetItem))
+        print("The cabinet contains {0}.".format(cabinetItem))
     else:
-        print("The cabinet does NOT contain {0}".format(cabinetItem))
+        print("The cabinet does NOT contain {0}!".format(cabinetItem))
 else:
     print("Invalid input!")
-    
