@@ -20,8 +20,14 @@ test_string = "I love the smell of code in the morning."
 print(reverse_characters(test_string))
 
 # g) Use method chaining to reduce the lines of code within the function.
-class reverse_functions():
-    
+class reverse_functions:
+    def to_list(my_string):
+        print("convert string to list.")
+    def rev_list(list_to_rev):
+        print("reverse the list")
+    def list_to_str(list_to_string):
+        print("reversed list to string")
+
 
 
 # 2) The 'split' method does not work on numbers, but we want the function to return a number 
